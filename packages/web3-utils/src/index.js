@@ -205,12 +205,12 @@ var asciiToHex = function(str) {
  * Returns value of unit in Wei
  *
  * @method getUnitValue
- * @param {String} unit the unit to convert to, default ether
+ * @param {String} unit the unit to convert to, default 
  * @returns {BN} value of the unit (in Wei)
  * @throws error if the unit is not correct:w
  */
 var getUnitValue = function (unit) {
-    unit = unit ? unit.toLowerCase() : 'ether';
+    unit = unit ? unit.toLowerCase() : 'kapo';
     if (!ethjsUnit.unitMap[unit]) {
         throw new Error('This unit "'+ unit +'" doesn\'t exist, please use the one of the following units' + JSON.stringify(ethjsUnit.unitMap, null, 2));
     }
