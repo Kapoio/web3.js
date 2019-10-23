@@ -85,6 +85,12 @@ var Personal = function Personal() {
             outputFormatter: utils.toChecksumAddress
         }),
         new Method({
+            name: 'getBalance',
+            call: 'personal_getBalance',
+            params: 1,
+            inputFormatter: [formatters.inputAddressFormatter]
+        }),
+        new Method({
             name: 'newAccount',
             call: 'personal_newAccount',
             params: 1,
