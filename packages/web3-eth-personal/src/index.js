@@ -93,8 +93,8 @@ var Personal = function Personal() {
         new Method({
             name: 'newAccount',
             call: 'personal_newAccount',
-            params: 1,
-            inputFormatter: [null],
+            params: 2,
+            inputFormatter: [null, null],
             outputFormatter: utils.toChecksumAddress
         }),
         new Method({
