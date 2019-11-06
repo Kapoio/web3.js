@@ -171,7 +171,7 @@ var outputTransactionFormatter = function (tx){
         tx.blockNumber = utils.hexToNumber(tx.blockNumber);
     if(tx.transactionIndex !== null)
         tx.transactionIndex = utils.hexToNumber(tx.transactionIndex);
-    tx.nonce = utils.hexToNumber(tx.nonce);
+    tx.nonce = outputBigNumberFormatter(tx.nonce);
     tx.gas = utils.hexToNumber(tx.gas);
     tx.gasPrice = outputBigNumberFormatter(tx.gasPrice);
     tx.value = outputBigNumberFormatter(tx.value);
