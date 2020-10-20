@@ -210,7 +210,7 @@ var asciiToHex = function(str) {
  * @throws error if the unit is not correct:w
  */
 var getUnitValue = function (unit) {
-    unit = unit ? unit.toLowerCase() : 'kapo';
+    unit = unit ? unit.toLowerCase() : 'kappa';
     if (!ethjsUnit.unitMap[unit]) {
         throw new Error('This unit "'+ unit +'" doesn\'t exist, please use the one of the following units' + JSON.stringify(ethjsUnit.unitMap, null, 2));
     }
